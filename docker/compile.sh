@@ -2,7 +2,6 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 PARENT_DIR="$(dirname "$SCRIPT_DIR")"
-DATASET_DIR="$(dirname "$(dirname "$SCRIPT_DIR")")/kitti"
 
 docker run -it --rm \
 --gpus all \
@@ -13,6 +12,6 @@ docker run -it --rm \
 -v $XAUTHORITY:$XAUTHORITY \
 -v /tmp/.X11-unix:/tmp/.X11-unix \
 -v $PARENT_DIR:/root/CalibNet \
--v $DATASET_DIR:/root/kitti \
+-v $SCRIPT_DIR/container/compile.sh:/root/compile.sh \
 tensorflow/tensorflow:1.3.0-gpu \
-/bin/bash
+/root/compile.sh
