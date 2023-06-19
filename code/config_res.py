@@ -8,11 +8,11 @@ import numpy as np
 # training_imgs_path: dir to save training progress frames (spatial transformer outputs during training)
 # validation_imgs_path: dir to save validation progress frames (spatial transformer outputs during validation)
 paths = dict(
-	resnet_params_path = "../Extrinsic_Calibration_2/parameters.json",
-	dataset_path_full = "/home/ganeshiyer/Extrinsic_Calibration_1.5/model_with_emd/rotation_results/parsed_set.txt",
-	checkpoint_path = "/tmp/ganesh_saved_Weights/Checkpoint_simple_transformer",
-	training_imgs_path = "/tmp/ganesh_saved_Weights/training_imgs",
-	validation_imgs_path = "/tmp/ganesh_saved_Weights/validation_imgs"
+	resnet_params_path = "/root/resnet_json_parameters/parameters.json",
+	dataset_path_full = "/root/parsed_set/parsed_set.txt",
+	checkpoint_path = "/root/weights/Checkpoint_simple_transformer",
+	training_imgs_path = "/root/weights/training_imgs",
+	validation_imgs_path = "/root/weights/validation_imgs"
 )
 
 # Depth Map parameters

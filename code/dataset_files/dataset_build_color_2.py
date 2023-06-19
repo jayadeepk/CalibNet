@@ -10,7 +10,6 @@ import os
 import glob
 import argparse
 from natsort import natsorted as ns
-from skimage import io
 
 import scipy.misc as smc
 plt.ion()
