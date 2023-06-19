@@ -1,1 +1,7 @@
 *.pyc
+code/tf_ops/emd/tf_auctionmatch_g.cu.o
+code/tf_ops/emd/tf_auctionmatch_so.so
+code/tf_ops/grouping/tf_grouping_g.cu.o
+code/tf_ops/grouping/tf_grouping_so.so
+code/tf_ops/sampling/tf_sampling_g.cu.o
+code/tf_ops/sampling/tf_sampling_so.so

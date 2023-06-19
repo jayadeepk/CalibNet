@@ -17,5 +17,5 @@ docker run -it --rm \
 -v $PARENT_DIR/kitti:/root/kitti:ro \
 -v $PARENT_DIR/parsed_set:/root/parsed_set:ro \
 -v $PARENT_DIR/weights:/root/weights \
-tensorflow/tensorflow:1.3.0-gpu \
+jayadeepk/calibnet:latest \
 /root/CalibNet/docker/container/train.sh
